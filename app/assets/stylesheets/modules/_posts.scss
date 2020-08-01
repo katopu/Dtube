@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+.Wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.Current {
+  height:  50px;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .Title {
+    height: 40;
+    margin-left: 10px;
+    background-color: whitesmoke;
+    .Logo {
+      height: 40px;
+      width: 150px;
+    }
+  }
+  .Acount {
+    height: 30;
+    margin-right: 10px;
+    background-color: whitesmoke;
+  }
+}
+
+.Header {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  .header-img {
+    height: 150px;
+    width: 10%;
+  }
+  .header-img2 {
+    height: 150px;
+    width: 5%;
+  }
+}
+
+.Center {
+  display: flex;
+}
+
+.Side-bar {
+  height: calc( 100vh - 250px );
+  width: 250px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: whitesmoke;
+  .Event-name {
+    font-size: 15px;
+  }
+  .Event-created-at {
+    font-size: 12px;
+  }
+  .Event-images {
+    height: 150px;
+    background-color: whitesmoke;
+  }
+  .main-img {
+    height: 150px;
+    width: 100%;
+  }
+  .Event-finish-at {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+.Main {
+  width: 100%;
+  background-color:whitesmoke;
+  display: flex;
+  .Left-contents {
+    width: 50%;
+    height: calc( 100vh - 250px );
+    margin: 0px 10px 0px 10px;
+    background-color: whitesmoke;
+    .main-img {
+      width: 100%;
+      height: 95%;
+    }
+  }
+
+  .Right-contents {
+    width: 50%;
+    height: calc( 100vh - 250px );
+    margin: 0px 10px 0px 10px;
+    background-color: whitesmoke;
+    .Comments-box {
+      margin: 20px 0px;
+    }
+  }
+}
+
+.Side-menu {
+  width: 100px;
+  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .menu {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+  }
+  .Home {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+  }
+  .Event {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+  }
+  .Group {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+  }
+}
+
+.Footer {
+  height: 50px;
+  width: 100vw;
+  background-color: rgb(209, 212, 174);
+}

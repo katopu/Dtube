@@ -45,18 +45,18 @@ Things you may want to cover:
 ### Association
 - belongs_to :user
 has_many :coments
-has_many  :tags, through: :posts_tags
-has_many :posts_tags
+has_many  :tags, through: :tag_posts
+has_many :tag_posts
 
 ## tagsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text|null :false|
 ### Association
-has_many :posts_tags
-has_many  :posts, through: :posts_tags
+has_many :tag_posts
+has_many  :posts, through: :tag_posts
 
-## posts_tagsテーブル
+## tag_postsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |post_id|integer|null :false, foreign_key: true|
